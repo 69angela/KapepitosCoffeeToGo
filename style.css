@@ -168,6 +168,52 @@ section{
 }
 
 
+/* General Navbar Links */
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+/* Hover Effect for All Navbar Links */
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Style for Login and Register Links to Make Them Stand Out */
+.header .navbar a[href="login.html"],
+.header .navbar a[href="register.html"] {
+    background: var(--main-color);  /* Set a distinct background color */
+    color: #fff;  /* White text color */
+    border-radius: 50px;  /* Rounded edges */
+    font-weight: bold;  /* Bold text */
+}
+
+/* Hover Effect for Login and Register Links */
+.header .navbar a[href="login.html"]:hover,
+.header .navbar a[href="register.html"]:hover {
+    background: #fff;  /* Change background to white */
+    color: var(--main-color);  /* Change text color to main color */
+    border: 2px solid var(--main-color);  /* Add a border */
+    padding: 1rem 2rem;  /* Increase padding for emphasis */
+}
+
+/* Rest of the Navbar Links Hover (as is) */
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
 .search-form {
     position: relative;
     max-width: 400px;
