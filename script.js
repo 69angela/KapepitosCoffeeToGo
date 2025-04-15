@@ -173,8 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize cart on page load
     updateCart();
 
-
-    
     
     
 
