@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapepito's Coffee Shop</title>
+
+    <!-- font cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     
+     <!-- custom css file link -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logu.png" alt="Kapepito Coffee Shop Logo">
+        </a>
+    
+        <nav class="navbar">
+            <a href="kapepito.html">home</a>
+            <a href="about.html">about</a>
+            <a href="#menu">menu</a>
+            <a href="products.html">products</a>
+            <a href="review.html">Reviews</a>
+            <a href="contact.html">contact</a>
+            <a href="blog.html">blogs</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    
+    
+    
+    
+        
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-bars" id="menu-btn"></i>
+            <i class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-count">0</span>
+            </i>
+                   
+    
+        </div>
+    
+    
+        
+        
+        
+        
+        
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    
+    
+    
+    </header>
+
+
+
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Our <span>Menu</span></h1>
+      
+        <div class="menu-container">
+          <div class="menu-card espresso">
+            <div class="content">
+              <h3>Espresso</h3>
+              <p>Bold and rich shots, brewed to perfection.</p>
+              <a href="products.html" class="btn">View More</a>
+            </div>
+          </div>
+      
+          <div class="menu-card non-coffee">
+            <div class="content">
+              <h3>Non Coffee</h3>
+              <p>Refreshing and flavorful blends without caffeine.</p>
+              <a href="products.html" class="btn">View More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="footer">
+
+        <div class="share"> 
+            <a href="https://www.facebook.com/@KAPEpitos" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@kapepitos?is_from_webapp=1&sender_device=pc" class="icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/kapepitos/" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.foodpanda.ph/restaurant/amzg/kapepitos-juan-luna" target="_blank" class="icon" title="Foodpanda">
+                <img src="https://img.icons8.com/?size=512&id=6PPJuxkGUHti&format=png" 
+                     alt="Foodpanda">
+            </a>
+        </div>
+        
+        
+    
+        <div class="links">
+            <a href="kapepito.html">home</a>
+            <a href="about.html">about</a>
+            <a href="#menu">menu</a>
+            <a href="products.html">products</a>
+            <a href="review.html">Reviews</a>
+            <a href="contact.html">contact</a>
+            <a href="blog.html">blogs</a>
+    
+        </div>
+    
+        <div class="credit">created by Mr. web designer Mission dump | all rights reserved</div>
+    
+    </section>
+    
+    
+    
+    
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p><span class="total-label">Total:</span>
+            <span id="cart-total">₱0.00</span>
+            <button id="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

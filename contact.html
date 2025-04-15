@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapepito's Coffee Shop</title>
+
+    <!-- font cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     
+     <!-- custom css file link -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logu.png" alt="Kapepito Coffee Shop Logo">
+        </a>
+    
+        <nav class="navbar">
+            <a href="kapepito.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="products.html">products</a>
+            <a href="review.html">Reviews</a>
+            <a href="#contact">contact</a>
+            <a href="blog.html">blogs</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    
+    
+    
+    
+        
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-bars" id="menu-btn"></i>
+            <i class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-count">0</span>
+            </i>
+                   
+    
+        </div>
+    
+    
+        
+        
+        
+        
+        
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    
+    
+    
+    </header>
+
+
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us </h1>
+    
+        <div class="row">
+    
+            <!-- Google Map Section -->
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482.55702666400725!2d120.97396367191847!3d14.630025334571176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5fba0d7e4e7%3A0xc99b57a095309923!2sKAPEpitos%20Juan%20Luna!5e0!3m2!1sen!2sph!4v1744518229945!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            <!-- Contact Form Section -->
+            <form action="">
+                <h3>get in touch</h3>
+    
+                <!-- Name Input -->
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+    
+                <!-- Email Input -->
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+    
+                <!-- Phone Number Input -->
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="tel" placeholder="Your Phone Number" required>
+                </div>
+    
+                <!-- Submit Button -->
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="footer">
+
+        <div class="share"> 
+            <a href="https://www.facebook.com/@KAPEpitos" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@kapepitos?is_from_webapp=1&sender_device=pc" class="icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/kapepitos/" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.foodpanda.ph/restaurant/amzg/kapepitos-juan-luna" target="_blank" class="icon" title="Foodpanda">
+                <img src="https://img.icons8.com/?size=512&id=6PPJuxkGUHti&format=png" 
+                     alt="Foodpanda">
+            </a>
+        </div>
+        
+        
+    
+        <div class="links">
+            <a href="kapepito.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="products.html">products</a>
+            <a href="review.html">Reviews</a>
+            <a href="#contact">contact</a>
+            <a href="blog.html">blogs</a>
+    
+        </div>
+    
+        <div class="credit">created by Mr. web designer Mission dump | all rights reserved</div>
+    
+    </section>
+    
+    
+    
+    
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p><span class="total-label">Total:</span>
+            <span id="cart-total">₱0.00</span>
+            <button id="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
