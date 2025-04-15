@@ -16,6 +16,9 @@
 <body>
 
 
+
+
+
 <!--header section starts-->
 
 <header class="header">
@@ -27,12 +30,17 @@
     <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">about</a>
-        <a href="#espresso">menu</a>
-        <a href="#products">products</a>
+        <a href="#menu">menu</a>
+        <a href="#espresso-products">products</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">contact</a>
         <a href="#blogs">blogs</a>
     </nav>
+
+
+
+
+    
 
     <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
@@ -43,6 +51,10 @@
                
 
     </div>
+
+
+    
+    
     
     
     
@@ -63,7 +75,7 @@
         <h1 class="heading"><span>Welcome to</span> Our Coffee Shop</h1>
         <h3>Experience the Best Coffee and Frappes in Town</h3>
         <p>Indulge in our handcrafted coffees made with the finest beans, paired with delicious pastries and snacks, all served with a warm smile. Whether you're here to relax or grab a quick pick-me-up, we've got something just for you!</p>
-        <a href="#espresso" class="btn">Explore Our Menu</a>
+        <a href="#menu" class="btn">Explore Our Menu</a>
     </div>
 
     <div class="image">
@@ -104,15 +116,45 @@ But were more than just coffee  were a community. Whether you're looking for a c
 
 <!-- menu section starts--> 
 
-<section class="menu" id="espresso">
-    <h1 class="heading">Our <span>Espresso</span></h1>
+<section class="menu" id="menu">
+    <h1 class="heading">Our <span>Menu</span></h1>
+  
+    <div class="menu-container">
+      <div class="menu-card espresso">
+        <div class="content">
+          <h3>Espresso</h3>
+          <p>Bold and rich shots, brewed to perfection.</p>
+          <a href="#espresso-products" class="btn">View More</a>
+        </div>
+      </div>
+  
+      <div class="menu-card non-coffee">
+        <div class="content">
+          <h3>Non Coffee</h3>
+          <p>Refreshing and flavorful blends without caffeine.</p>
+          <a href="#noncoffee-products" class="btn">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
 
+
+  <section class="products" id="espresso-products">
+
+    <h1 class="heading">Our <span>Product</span></h1>
+
+    <h2 class="subheading">Espresso</h2>
     <div class="box-container">
-
         <!-- Product 1 -->
         <div class="box" id="latte">
             <div class="content">
                 <h3>Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>              
                 <button class="btn add-to-cart" data-name="Latte" data-price="118.00">
@@ -125,6 +167,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="caramel latte">
             <div class="content">
                 <h3>Caramel Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>              
                 <button class="btn add-to-cart" data-name="Caramel Latte" data-price="118.00">
@@ -137,6 +183,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="salted caramel latte">
             <div class="content">
                 <h3>Salted Caramel Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="Salted Caramel Latte" data-price="118.00">
@@ -149,6 +199,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="tsokolate">
             <div class="content">
                 <h3>Tsokolate</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="Tsokolate" data-price="118.00">
@@ -162,6 +216,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <div class="content">
                 <img src="images/kape batik hot.jpg" alt="Kape Batik">
                 <h3>Kape Batik</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="Kape Batik" data-price="118.00">
@@ -175,6 +233,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <div class="content">
                 <img src="images/amerikano.jpg" alt="Americano">
                 <h3>Iced Americano</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Americano" data-price="125.00">
@@ -188,6 +250,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <img src="images/iced salted latte.jpg" alt="Iced Salted Caramel Latte">
             <div class="content">
                 <h3>Iced Salted Caramel</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Salted Caramel" data-price="125.00">
@@ -201,6 +267,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <img src="images/iced white mocha.jpg" alt="Iced White Mocha">
             <div class="content">
                 <h3>Iced White Mocha</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced White Mocha" data-price="125.00">
@@ -214,6 +284,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <img src="images/kape batik.jpg" alt="Iced Kape Batik (Caramel Macchiato)">
             <div class="content">
                 <h3>Iced Kape Batik (Caramel Macchiato)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Kape Batik (Caramel Macchiato)" data-price="125.00">
@@ -227,6 +301,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <img src="images/kayumanggi.jpg" alt="Iced Kape Kayumanggi (Brown Sugar)">
             <div class="content">
                 <h3>Iced Kape Kayumanggi (Brown Sugar)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Kape Kayumanggi" data-price="125.00">
@@ -240,6 +318,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <img src="images/tiramisu.jpg" alt="Tiramisu Latte">
             <div class="content">
                 <h3>Tiramisu Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱138</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Tiramisu Latte" data-price="138.00">
@@ -253,6 +335,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
             <img src="images/salted spanish latte.jpg" alt="Salted Spanish Latte">
             <div class="content">
                 <h3>Salted Spanish Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱138</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Salted Spanish Latte" data-price="138.00">
@@ -265,6 +351,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="amerikano">
             <div class="content">
                 <h3>Americano</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="Americano" data-price="118.00">
@@ -277,6 +367,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="white mocha">
             <div class="content">
                 <h3>White Mocha</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="White Mocha" data-price="118.00">
@@ -289,6 +383,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="kape kayumanggi">
             <div class="content">
                 <h3>Kape Kayumanggi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="Kape Kayumanggi" data-price="118.00">
@@ -301,6 +399,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="barista">
             <div class="content">
                 <h3>Barista</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="Barista" data-price="118.00">
@@ -313,6 +415,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="coffee cloud">
             <div class="content">
                 <h3>Coffee Cloud</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Coffee Cloud" data-price="125.00">
@@ -325,6 +431,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="salted caramel macchiato">
             <div class="content">
                 <h3>Salted Caramel Macchiato</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱118</span>
                 <p class="temp" style="color:black;">HOT</p>
                 <button class="btn add-to-cart" data-name="Salted Caramel Macchiato" data-price="118.00">
@@ -337,6 +447,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="iced latte">
             <div class="content">
                 <h3>Iced Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Latte" data-price="125.00">
@@ -349,6 +463,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="iced caramel latte">
             <div class="content">
                 <h3>Iced Caramel Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Caramel Latte" data-price="125.00">
@@ -361,6 +479,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="iced tsokolate">
             <div class="content">
                 <h3>Iced Tsokolate</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Tsokolate" data-price="125.00">
@@ -373,6 +495,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="iced barista">
             <div class="content">
                 <h3>Iced Barista</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Iced Barista" data-price="125.00">
@@ -385,6 +511,10 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <div class="box" id="espresso blend">
             <div class="content">
                 <h3>Espresso Blend</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
                 <span>₱125</span>
                 <p class="temp" style="color:black;">ICED</p>
                 <button class="btn add-to-cart" data-name="Espresso Blend" data-price="125.00">
@@ -396,12 +526,11 @@ But were more than just coffee  were a community. Whether you're looking for a c
     </div>
 </section>
 
+<section class="products" id="noncoffee-products">
 
-<section class="products" id="products">
+<h2 class="subheading">Non Coffee</h2>
 
-    <h1 class="heading">Our <span>Non coffee</span></h1>
-
-    <div class="box-container">
+  <div class="box-container">
         <!-- Example Product -->
         <div class="box">
             <div class="content">
@@ -814,7 +943,7 @@ But were more than just coffee  were a community. Whether you're looking for a c
         <ul id="cart-items"></ul>
         <p><span class="total-label">Total:</span>
         <span id="cart-total">₱0.00</span>
-        <button id="checkout-btn">Checkout</button>
+        <button id="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
         <button id="close-cart">Close</button>
     </div>
 </div>
