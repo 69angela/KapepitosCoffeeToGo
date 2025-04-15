@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Kapepito's Coffee Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="checkout-section">
+    <h1 class="checkout-header">Checkout - Kapepito's Coffee Shop</h1>
+
+    <!-- Delivery Form -->
+    <form id="deliveryForm" class="checkout-form">
+      <h3>Delivery Information</h3>
+      <input type="text" placeholder="Full Name" id="fullName" required><br>
+      <input type="text" placeholder="Address" id="address" required><br>
+      <input type="email" placeholder="Email" id="email" required><br>
+      <input type="tel" placeholder="Phone Number" id="phone" required><br>
+    </form>
+
+    <!-- Payment Form -->
+    <form id="paymentForm" class="checkout-form payment-methods">
+      <h3>Select Payment Method</h3>
+      <label><input type="radio" name="paymentMethod" value="gcash" required> GCash</label><br>
+      <label><input type="radio" name="paymentMethod" value="paymaya"> PayMaya</label><br>
+      <label><input type="radio" name="paymentMethod" value="bank"> Bank Transfer</label><br>
+      <label><input type="radio" name="paymentMethod" value="cod"> Cash on Delivery</label><br>
+
+      <div id="payment-instructions"></div>
+
+      <div id="proofUpload" style="display: none;">
+        <label for="screenshot">Upload Payment Proof (for GCash/PayMaya/Bank Transfer)</label>
+        <input type="file" id="screenshot" accept="image/*">
+      </div>
+
+      <button type="button" onclick="submitOrder()">Place Order</button>
+    </form>
+  </div>
+
+  <script src="checkout-script.js"></script>
+</body>
+</html>
