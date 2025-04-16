@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout - Kapepito's Coffee Shop</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .downpayment-note {
+      background-color: #fff8dc;
+      border-left: 5px solid #a0522d;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
@@ -23,6 +32,14 @@
     <!-- Payment Form -->
     <form id="paymentForm" class="checkout-form payment-methods">
       <h3>Select Payment Method</h3>
+
+      <div class="downpayment-note">
+        Note: A 50% downpayment is required to process your order. The remaining balance is payable upon delivery.
+      </div>
+      <div id="downpayment-info" style="margin-top: 10px; font-weight: bold;">
+        <!-- Downpayment info will be injected here -->
+      </div>
+
       <label><input type="radio" name="paymentMethod" value="gcash" required> GCash</label><br>
       <label><input type="radio" name="paymentMethod" value="paymaya"> PayMaya</label><br>
       <label><input type="radio" name="paymentMethod" value="cod"> Cash on Delivery</label><br>
@@ -30,8 +47,11 @@
       <div id="payment-instructions"></div>
 
       <div id="proofUpload" style="display: none;">
-        <label for="screenshot">Upload Payment Proof (for GCash/PayMaya/Bank Transfer)</label>
+        <label for="screenshot">Upload Payment Proof (for GCash/PayMaya)</label>
         <input type="file" id="screenshot" accept="image/*">
+      </div>
+      <div id="payment-summary" style="margin-top: 15px; font-weight: bold;">
+        <!-- Summary will appear here -->
       </div>
 
       <button type="button" onclick="submitOrder()">Place Order</button>
