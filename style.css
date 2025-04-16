@@ -386,6 +386,7 @@ section{
   
   .menu .heading {
     font-size: 3rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
   }
   
@@ -865,92 +866,242 @@ section{
       opacity: 1;
     }
   }
-  
 
 
-
-.addons {
-    padding: 4rem 2rem;
-    background: #f3e9dc;
-    text-align: center;
-  }
-  
-  .addons .heading {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #4b3621;
-  }
-  
-  .addons-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    justify-items: center;
-  }
-  
-  @media (max-width: 992px) {
-    .addons-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .addons-container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .addon-item {
-    background: #fff8f0;
+/* General Product Box Styling */
+.box {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 250px;
-    transition: transform 0.3s ease;
-  }
-  
-  .addon-item:hover {
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
-  }
-  
-  .addon-item img {
-    width: 80px;
-    margin-bottom: 1rem;
-  }
-  
-  .addon-item h3 {
-    font-size: 1.2rem;
-    color: #4b3621;
-  }
-  
-  .addon-item p {
-    font-size: 0.95rem;
-    color: #6b4f3b;
-  }
-  
-  .addon-item .price {
-    display: block;
-    font-weight: bold;
-    color: #8b5e3c;
-    margin: 0.5rem 0;
-  }
-  
-  .add-addon-btn {
-    background: #8b5e3c;
-    color: white;
-    padding: 0.5rem 1.2rem;
-    border: none;
+}
+
+/* Product Size Dropdown Styling */
+.box .product-size {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: 2px solid #7a523d;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f3e0d1;
+    color: #5c4033;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.box .product-size:hover,
+.box .product-size:focus {
+    border-color: #d28d61;
+    background-color: #ffe4c4;
+    outline: none;
+}
+
+/* Add-on Section */
+.addons-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #5c4033;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add-on Checkbox Container Styling */
+.box .product-addon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+    background-color: #f7f1e7;
+    padding: 15px;
     border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.box .product-addon-container .addon {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #5c4033;
+    transition: color 0.3s ease;
+}
+
+.box .product-addon-container .addon input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for addon labels */
+.box .product-addon-container .addon:hover {
+    color: #7a523d;
+}
+
+/* Checkbox checked effect */
+.box .product-addon-container .addon input:checked {
+    transform: scale(1.1);
+}
+
+/* Stylish Add-to-Cart Button */
+.add-to-cart {
+    background: linear-gradient(145deg, #5c4033, #7a523d);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(145deg, #7a523d, #5c4033);
+    box-shadow: 0 10px 20px rgba(92, 64, 51, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Add-ons label and style for showing selected add-ons in cart */
+.cart-item .addons {
+    font-size: 14px;
+    color: #7a523d;
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cart-item .item-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cart-item .item-price {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Mobile-Responsive Enhancements */
+@media screen and (max-width: 767px) {
+    .box {
+        padding: 18px;
+    }
+    
+    .box .product-size,
+    .box .product-addon-container {
+        font-size: 14px;
+    }
+
+    .box .product-addon-container {
+        gap: 8px;
+    }
+
+    .add-to-cart {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+.add-to-cart {
+    background: #5c4033;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background: #3f2c1f;
+}
+
+/* Style for showing selected size and add-ons in the cart modal */
+.cart-item .addons {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+.cart-item .item-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-item .item-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.add-to-cart {
+    background: #5c4033;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #3f2c1f;
+}
+
+
+
+
+  .product-actions {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1rem;
   }
   
-  .add-addon-btn:hover {
-    background: #70452b;
+  .product-size {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 1rem;
   }
   
-
-
-
+  .addon-toggle-box {
+    border: 2px dashed #c69c6d;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f7f3ee;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addon-toggle-box:hover {
+    background-color: #e6ded7;
+  }
+  
+  .product-addons {
+    margin-top: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .product-addons.hidden {
+    display: none;
+  }
+  
+  
 
 
 
@@ -1436,6 +1587,12 @@ background-color: #f3f3f3;    padding: 5rem 7%;
 
 
 
+
+
+
+
+
+
 #cart-btn {
     position: fixed;
     bottom: 20px;
@@ -1604,3 +1761,36 @@ background-color: #f3f3f3;    padding: 5rem 7%;
     opacity: 1;
 }
 
+
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.product-addon {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    min-width: 160px;
+}
+
+.product-addon:hover {
+    border-color: #ff7f00;
+}
+
+
+.search-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
