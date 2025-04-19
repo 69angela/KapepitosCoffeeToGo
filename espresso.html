@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapepito's Products</title>
+
+    <!-- font cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     
+     <!-- custom css file link -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logu.png" alt="Kapepito Coffee Shop Logo">
+        </a>
+    
+        <nav class="navbar">
+            <a href="kapepito.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="products.html">products</a>
+            <a href="review.html">Reviews</a>
+            <a href="contact.html">contact</a>
+            <a href="blog.html">blogs</a>
+        </nav>
+    
+    
+    
+    
+        
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-bars" id="menu-btn"></i>
+            <i class="fas fa-shopping-cart" id="cart-btn">
+                <span id="cart-count">0</span>
+            </i>
+                   
+    
+        </div>
+    
+    
+        
+        
+        
+        
+        
+        <div class="search-form">
+            <input type="search" id="search-input" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    
+    
+    
+    </header>
+
+
+    <section class="products" id="espresso-products">
+        <h1 class="heading">Our <span>Product</span></h1>
+        
+            <h2 class="subheading">Espresso</h2>
+            <div class="box-container">
+                <!-- Product 1 -->
+                <div class="box" id="latte" data-name="latte">
+                    <div class="content">
+                        <h3>Latte</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                      <div class="product-actions">
+                        <select class="product-size">
+                          <option value="12oz" data-price="90">12oz - ₱90</option>
+                          <option value="16oz" data-price="95">16oz - ₱95</option>
+                          <option value="22oz" data-price="120">22oz - ₱120</option>
+                        </select>
+                      </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>              
+                        <button class="btn add-to-cart" data-name="Latte" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 2 -->
+                <div class="box" id="caramel latte" data-name="caramel latte">
+                    <div class="content">
+                        <h3>Caramel Latte</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>              
+                        <button class="btn add-to-cart" data-name="Caramel Latte" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 3 -->
+                <div class="box" id="salted caramel latte" data-name="salted caramel latte">
+                    <div class="content">
+                        <h3>Salted Caramel Latte</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="Salted Caramel Latte" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 4 -->
+                <div class="box" id="tsokolate" data-name="tsokolate">
+                    <div class="content">
+                        <h3>Tsokolate</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="Tsokolate" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 5 -->
+                <div class="box" id="kape batik" data-name="kape batik">
+                    <div class="content">
+                        <img src="images/kape batik hot.jpg" alt="Kape Batik">
+                        <h3>Kape Batik</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="Kape Batik" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 6 -->
+                <div class="box" id="iced amerikano" data-name="iced amerikano">
+                    <div class="content">
+                        <img src="images/amerikano.jpg" alt="Americano">
+                        <h3>Iced Americano</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Americano" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 7 -->
+                <div class="box" id="iced salted caramel" data-name="iced salted caramel">
+                    <img src="images/iced salted latte.jpg" alt="Iced Salted Caramel Latte">
+                    <div class="content">
+                        <h3>Iced Salted Caramel</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Salted Caramel" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 8 -->
+                <div class="box" id="iced white mocha" data-name="iced white mocha">
+                    <img src="images/iced white mocha.jpg" alt="Iced White Mocha">
+                    <div class="content">
+                        <h3>Iced White Mocha</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced White Mocha" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 9 -->
+                <div class="box" id="iced kape batik (caramel macchiato)" data-name="iced kape batik (caramel macchiato)">
+                    <img src="images/kape batik.jpg" alt="Iced Kape Batik (Caramel Macchiato)">
+                    <div class="content">
+                        <h3>Iced Kape Batik (Caramel Macchiato)</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Kape Batik (Caramel Macchiato)" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 10 -->
+                <div class="box" id="iced kape kayumanggi (brown sugar)" data-name="iced kape kayumanggi (brown sugar)">
+                    <img src="images/kayumanggi.jpg" alt="Iced Kape Kayumanggi (Brown Sugar)">
+                    <div class="content">
+                        <h3>Iced Kape Kayumanggi (Brown Sugar)</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Kape Kayumanggi" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 11 -->
+                <div class="box" id="tiramisu latte" data-name="tiramisu latte">
+                    <img src="images/tiramisu.jpg" alt="Tiramisu Latte">
+                    <div class="content">
+                        <h3>Tiramisu Latte</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                      <div class="product-actions">
+                        <select class="product-size">
+                          <option value="16oz" data-price="105">16oz - ₱105</option>
+                          <option value="22oz" data-price="130">22oz - ₱130</option>
+                        </select>
+                      </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Tiramisu Latte" data-price="138.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 12 -->
+                <div class="box" id="salted spanish latte" data-name="salted spanish latte">
+                    <img src="images/salted spanish latte.jpg" alt="Salted Spanish Latte">
+                    <div class="content">
+                        <h3>Salted Spanish Latte</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                      <div class="product-actions">
+                        <select class="product-size">
+                          <option value="16oz" data-price="105">16oz - ₱105</option>
+                          <option value="22oz" data-price="130">22oz - ₱130</option>
+                        </select>
+                      </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Salted Spanish Latte" data-price="138.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 13 -->
+                <div class="box" id="amerikano" data-name="amerikano">
+                    <div class="content">
+                        <h3>Americano</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="Americano" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 14 -->
+                <div class="box" id="white mocha" data-name="white mocha">
+                    <div class="content">
+                        <h3>White Mocha</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="White Mocha" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 15 -->
+                <div class="box" id="kape kayumanggi" data-name="kape kayumanggi">
+                    <div class="content">
+                        <h3>Kape Kayumanggi</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="Kape Kayumanggi" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 16 -->
+                <div class="box" id="barista" data-name="barista">
+                    <div class="content">
+                        <h3>Barista</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="Barista" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 17 -->
+                <div class="box" id="coffee cloud" data-name="coffee cloud">
+                    <div class="content">
+                        <h3>Coffee Cloud</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Coffee Cloud" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 18 -->
+                <div class="box" id="salted caramel macchiato" data-name="salted caramel macchiato">
+                    <div class="content">
+                        <h3>Salted Caramel Macchiato</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">HOT</p>
+                        <button class="btn add-to-cart" data-name="Salted Caramel Macchiato" data-price="118.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 19 -->
+                <div class="box" id="iced latte" data-name="iced latte">
+                    <div class="content">
+                        <h3>Iced Latte</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Latte" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 20 -->
+                <div class="box" id="iced caramel latte" data-name="iced caramel latte">
+                    <div class="content">
+                        <h3>Iced Caramel Latte</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Caramel Latte" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 21 -->
+                <div class="box" id="iced tsokolate" data-name="iced tsokolate">
+                    <div class="content">
+                        <h3>Iced Tsokolate</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Tsokolate" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 22 -->
+                <div class="box" id="iced barista" data-name="iced barista">
+                    <div class="content">
+                        <h3>Iced Barista</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Iced Barista" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Product 23 -->
+                <div class="box" id="espresso blend" data-name="espresso blend">
+                    <div class="content">
+                        <h3>Espresso Blend</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!-- Size Selection -->
+                        <div class="product-actions">
+                            <select class="product-size">
+                              <option value="12oz" data-price="90">12oz - ₱90</option>
+                              <option value="16oz" data-price="95">16oz - ₱95</option>
+                              <option value="22oz" data-price="120">22oz - ₱120</option>
+                            </select>
+                          </div>
+                  
+                      <!-- Add-ons Section -->
+                      <div class="product-actions">
+                        <select class="product-addon">
+                          <option value="">No Add-ons</option>
+                          <option value="Extra Java Chips|20" data-price="20">Extra Java Chips (+₱20)</option>
+                          <option value="Extra Flavoured Syrup|20" data-price="20">Extra Flavoured Syrup (+₱20)</option>
+                          <option value="Extra Espresso Shot|20" data-price="20">Extra Espresso Shot (+₱20)</option>
+                          <option value="Extra Coffee Jelly|20" data-price="20">Extra Coffee Jelly (+₱20)</option>
+                          <option value="Extra Drizzle|20" data-price="20">Extra Drizzle (+₱20)</option>
+                          <option value="Whipped Cream|20" data-price="20">Whipped Cream (+₱20)</option>
+                        </select>
+                      </div>
+                        <p class="temp" style="color:black;">ICED</p>
+                        <button class="btn add-to-cart" data-name="Espresso Blend" data-price="125.00">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        
+
+
+        <section class="footer">
+
+            <div class="share"> 
+                <a href="https://www.facebook.com/@KAPEpitos" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@kapepitos?is_from_webapp=1&sender_device=pc" class="icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/kapepitos/" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.foodpanda.ph/restaurant/amzg/kapepitos-juan-luna" target="_blank" class="icon" title="Foodpanda">
+                    <img src="https://img.icons8.com/?size=512&id=6PPJuxkGUHti&format=png" 
+                         alt="Foodpanda">
+                </a>
+            </div>
+            
+            
+        
+            <div class="links">
+                <a href="kapepito.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="menu.html">menu</a>
+                    <a href="products.html">products</a>
+                    <a href="review.html">Reviews</a>
+                    <a href="contact.html">contact</a>
+                    <a href="blog.html">blogs</a>
+        
+            </div>
+        
+            <div class="credit">created by Mr. web designer Mission dump | all rights reserved</div>
+        
+             </section>
+        
+        
+            <div id="cart-modal" class="cart-modal">
+            <div class="cart-content">
+                <h3>Your Cart</h3>
+                <ul id="cart-items"></ul>
+                <p><span class="total-label">Total:</span>
+                <span id="cart-total">₱0.00</span>
+                <button id="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+                <button id="close-cart">Close</button>
+            </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <script src="script.js"></script>
+        
+        
+        
+        </body>
+        </html>
+        
+
+
+
+
+
