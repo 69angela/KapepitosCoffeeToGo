@@ -121,16 +121,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkoutBtn.addEventListener('click', () => {
-        if (cartItems.length === 0) {
-            showToast("Your cart is empty!");
-        } else {
-            showToast("Thank you for your order!");
-            cartItems = [];
-            updateCart();
-            localStorage.removeItem('cartItems');
-            cartModal.classList.remove('active');
-        }
-    });
+    if (cartItems.length === 0) {
+        showToast("Your cart is empty!");
+    } else {
+        // Show the terms modal
+        document.getElementById('terms-modal').classList.add('active');
+    }
+});
+
+    // When user agrees to Terms
+document.getElementById('agree-btn').addEventListener('click', () => {
+    document.getElementById('terms-modal').classList.remove('active');
+    window.location.href = 'checkout.html'; // Go to real checkout
+});
+
+// When user cancels
+document.getElementById('cancel-terms').addEventListener('click', () => {
+    document.getElementById('terms-modal').classList.remove('active');
+});
 
     function showToast(message) {
         toastMessage.textContent = message;
