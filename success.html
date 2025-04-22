@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order Success | Kapepito's Coffee Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e5b12f;
+      color: #4e342e;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .success-box {
+      background-color: #fef7e5;
+      border: 2px solid #d7ccc8;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .success-box h1 {
+      color: #6d4c41;
+      margin-bottom: 10px;
+    }
+
+    .success-box p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      background: #fff;
+      border: 1px solid #d7ccc8;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      background-color: #795548;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #5d4037;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-box">
+    <h1>Order Confirmed! 🎉</h1>
+    <p>Thanks for ordering from <strong>Kapepito's Coffee To Go</strong>.</p>
+    <p>Your order is now being prepared with love and espresso!</p>
+
+    <div class="summary" id="order-summary">
+      <!-- Order summary will appear here -->
+    </div>
+
+    <a class="back-btn" href="index.html">Back to Home</a>
+  </div>
+
+  <script>
+    // Get order details from localStorage
+    const order = JSON.parse(localStorage.getItem("orderDetails"));
+
+    if (order) {
+      const summaryDiv = document.getElementById("order-summary");
+
+      let itemsHTML = "";
+      order.cartItems.forEach(item => {
+        itemsHTML += `<li>${item.quantity}x ${item.name} (${item.size}) - ₱${(item.price * item.quantity).toFixed(2)}</li>`;
+      });
+
+      summaryDiv.innerHTML = `
+        <p><strong>Name:</strong> ${order.name}</p>
+        <p><strong>Address:</strong> ${order.address}</p>
+        <p><strong>Payment Method:</strong> ${order.paymentMethod.toUpperCase()}</p>
+        <p><strong>Total Price:</strong> ₱${parseFloat(order.totalPrice).toFixed(2)}</p>
+        <p><strong>Items Ordered:</strong></p>
+        <ul>${itemsHTML}</ul>
+      `;
+    } else {
+      document.getElementById("order-summary").innerHTML = "<p>No order information found.</p>";
+    }
+  </script>
+</body>
+</html>
