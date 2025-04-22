@@ -2,7 +2,7 @@
 
 :root{
     --main-color: #14110d;
-    --black: #151411;
+    --black: #12120f;
     --bg: #e5b12f;
     --border: .1rem solid rgba(255,255,255,.3);
 }
@@ -185,23 +185,7 @@ section{
     background: rgba(0, 0, 0, 0.05);
 }
 
-/* Style for Login and Register Links to Make Them Stand Out */
-.header .navbar a[href="login.html"],
-.header .navbar a[href="register.html"] {
-    background: var(--main-color);  /* Set a distinct background color */
-    color: #fff;  /* White text color */
-    border-radius: 50px;  /* Rounded edges */
-    font-weight: bold;  /* Bold text */
-}
 
-/* Hover Effect for Login and Register Links */
-.header .navbar a[href="login.html"]:hover,
-.header .navbar a[href="register.html"]:hover {
-    background: #fff;  /* Change background to white */
-    color: var(--main-color);  /* Change text color to main color */
-    border: 2px solid var(--main-color);  /* Add a border */
-    padding: 1rem 2rem;  /* Increase padding for emphasis */
-}
 
 /* Rest of the Navbar Links Hover (as is) */
 .header .navbar a:hover {
@@ -1890,3 +1874,5 @@ input[type="checkbox"] {
     font-size: 1em;
   }
 }
+
+
