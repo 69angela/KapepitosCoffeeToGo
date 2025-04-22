@@ -90,6 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
         cartTotal.textContent = total.toFixed(2);
         cartCount.textContent = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
+        // ✅ Save total price in localStorage
+        localStorage.setItem('totalPrice', total.toFixed(2));
+
         const summaryBox = document.getElementById('payment-summary');
         if (summaryBox) {
             const downpayment = total * 0.5;
@@ -121,24 +124,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkoutBtn.addEventListener('click', () => {
-    if (cartItems.length === 0) {
-        showToast("Your cart is empty!");
-    } else {
-        // Show the terms modal
-        document.getElementById('terms-modal').classList.add('active');
-    }
-});
-
-    // When user agrees to Terms
-document.getElementById('agree-btn').addEventListener('click', () => {
-    document.getElementById('terms-modal').classList.remove('active');
-    window.location.href = 'checkout.html'; // Go to real checkout
-});
-
-// When user cancels
-document.getElementById('cancel-terms').addEventListener('click', () => {
-    document.getElementById('terms-modal').classList.remove('active');
-});
+        if (cartItems.length === 0) {
+            showToast("Your cart is empty!");
+        } else {
+            window.location.href = 'checkout.html';
+        }
+    });
 
     function showToast(message) {
         toastMessage.textContent = message;
@@ -176,26 +167,22 @@ document.getElementById('cancel-terms').addEventListener('click', () => {
 
     updateCart();
 
-
-
+    // === Product Search ===
     const searchInput = document.querySelector('#search-input');
-const productBoxes = document.querySelectorAll('.box');
+    const productBoxes = document.querySelectorAll('.box');
 
-searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
 
-    productBoxes.forEach(box => {
-        const name = box.dataset.name.toLowerCase();
-        if (name.includes(query)) {
-            box.style.display = 'block';
-        } else {
-            box.style.display = 'none';
-        }
-    });
-});
-
-
-
-
-
+            productBoxes.forEach(box => {
+                const name = box.dataset.name.toLowerCase();
+                if (name.includes(query)) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        });
+    }
 });
