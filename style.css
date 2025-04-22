@@ -1794,3 +1794,99 @@ background-color: #f3f3f3;    padding: 5rem 7%;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+
+
+
+#terms-of-service {
+  width: 80%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #2980b9;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Link Styles */
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Agreement Checkbox */
+div {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+label {
+  color: #333;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #terms-of-service {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  div {
+    font-size: 1em;
+  }
+}
