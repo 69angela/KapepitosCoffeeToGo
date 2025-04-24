@@ -1540,7 +1540,7 @@ section{
     
     .header .navbar.active{
         right: 0;
-        background: var(--bg);
+        background: #dbaa23;
     }
 
     .header .navbar a{
