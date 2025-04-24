@@ -1409,7 +1409,7 @@ background-color: #f3f3f3;    padding: 5rem 7%;
 }
 
 .about {
-    background: var(--black);
+    background: #dbaa23;
     color: #fff;
     padding: 5rem 7%;
 }
@@ -1417,6 +1417,7 @@ background-color: #f3f3f3;    padding: 5rem 7%;
 .about .heading {
     text-align: center;
     font-size: 3.5rem;
+    margin-top: 5rem;
     margin-bottom: 4rem;
 }
 
